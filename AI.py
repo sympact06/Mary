@@ -18,3 +18,4 @@ def _ai_basic(data):
     return func.respond("You told me " + data + " But we cant reconize it. Please ask a other question or ask it again. Only English")
 
 
+tyest
