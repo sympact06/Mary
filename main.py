@@ -2,6 +2,7 @@ import pyttsx3
 import pyaudio
 import speech_recognition as sr
 import AI as ai
+import wikipedia
 import functions as func
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')

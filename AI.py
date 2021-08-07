@@ -1,4 +1,5 @@
 import pyttsx3
+import wikipedia
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
 engine.setProperty('voice','voices[1].id')
@@ -15,6 +16,14 @@ def _ai_basic(data):
     func.containsword('goodbye', data, "Ok. Bye then... ")
     func.containsword('boomer', data, "No you are a boomer. Uno reverse mate..")
     func.containsword('life', data, "Life hurts")
+    if 'Wikipedia' in data:
+        _wikipedia(data)
+        return
     return func.respond("You told me " + data + " But we cant reconize it. Please ask a other question or ask it again. Only English")
 
 
+def _wikipedia(data):
+    #to do convert data to string
+    #to do remove the first word (wikipedia) from the string
+    func.SearchWiki(data)
+    exit(69)
