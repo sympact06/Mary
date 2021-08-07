@@ -1,7 +1,7 @@
 # Mary
 Mary is a Virtual Assistant Written in Python.
 
-##Packages Required: (pip)
+#Packages Required: (pip)
 * pyttsx3
 * pyaudio
 * speechrecognition
